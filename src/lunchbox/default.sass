@@ -1,0 +1,93 @@
+*
+     box-sizing: border-box 
+     
+h1, h2, h3, h4, h5, h6
+     font-weight: normal
+
+blockquote
+     background-color: #1E1E1E
+     color: white
+     padding: 20px
+
+     p
+          margin-left: 20px
+
+     label
+          display: block
+          margin-bottom: 20px
+          color: orange
+
+.header
+     background: linear-gradient(90deg,pink,tomato)
+     border-bottom: 1px solid black
+     border-top: 1px solid black
+     overflow: hidden
+
+     .daniel
+          display: flex
+          justify-content: center
+          align-items: center
+          font-size: 20px
+          font-weight: lighter
+     
+     nav
+          min-height: 45px
+          height: 100%
+          display: flex
+          align-items: center
+          justify-content: flex-end
+
+
+
+          a
+               text-decoration: none
+               color: inherit
+               padding: 5px 10px
+               margin: 0 20px
+               text-transform: uppercase
+               letter-spacing: 0.1em
+               //font-style: italic
+               position: relative
+               font-weight: lighter
+               border: 1px solid black
+               background: white
+               transition: 0.2s
+               //height: calc(2em + 5px)
+
+               &:hover
+                    padding: 10px 10px
+
+               &::before, &::after
+                    content: ""
+                    position: absolute
+                    width: 42px
+                    height: 1px
+                    background: black
+                    top: 50%
+               &::before
+                    right: 100%
+               &::after
+                    left: 100%
+
+               &:last-child
+                    &::after
+                         display: none
+               &:first-child
+                    &::before
+                         display: none
+
+               &.active
+                    &::after, &::before
+                         content: ""
+                         position: absolute
+                         left: calc(50% - 1px)
+                         width: 1px
+                         height: 200px
+                         background: black
+                         top: auto
+                         bottom: auto
+                         display: block
+                    &::after
+                         top: 100%
+                    &::before
+                         bottom: 100%
