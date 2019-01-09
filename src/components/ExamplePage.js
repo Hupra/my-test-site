@@ -24,7 +24,7 @@ export default () => {
     }, []);
 
     return (
-        <Grid gutter={10} columns={12} padding={35}>
+        <Grid gutter={10} columns={12}>
             <Brick>Fetched person:</Brick>
             <Brick>{data}</Brick>
             <Brick w={12}>

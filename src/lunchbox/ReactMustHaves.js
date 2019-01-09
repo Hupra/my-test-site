@@ -23,6 +23,7 @@ export default () => {
                 <li>npm i node-sass --save</li>
                 <li>npm i react-loader-spinner --save</li>
                 <li>npm i react-helmet --save</li>
+                <li>npm i gh-pages --save</li>
             </ul>
             <h2>Files to create:</h2>
 
