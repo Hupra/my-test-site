@@ -460,7 +460,7 @@
 
         async function fetchDetails (desCountry){
                 
-            const res = await fetch("http://restcountries.eu/rest/v1/alpha?codes=" + desCountry);
+            const res = await fetch("https://restcountries.eu/rest/v1/alpha?codes=" + desCountry);
             if(res.status === 200){
                 const json = await res.json();
                 const details = json[0];
