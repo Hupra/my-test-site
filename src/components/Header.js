@@ -12,6 +12,7 @@ export default () => {
                 </NavLink>
                 <NavLink to="/setup">Setup</NavLink>
                 <NavLink to="/repositories">Repositories</NavLink>
+                <NavLink to="/exam-notes">Exam Notes</NavLink>
             </nav>
         </header>
     );

@@ -5,6 +5,7 @@ import { Route } from "react-router-dom";
 import { Grid, Brick } from "./lunchbox/Grid";
 import Setup from "./components/Setup";
 import Repositories from "./components/Repositories";
+import ExamNotes from "./components/ExamNotes";
 
 export default () => {
     return (
@@ -14,6 +15,8 @@ export default () => {
                 <Route exact path="/" component={ExamplePage} />
                 <Route path="/setup" component={Setup} />
                 <Route path="/repositories" component={Repositories} />
+                <Route path="/exam-notes" component={ExamNotes} />
+
                 <Route exact path="/about" render={() => <div>This is the about page</div>} />
                 <Route
                     exact

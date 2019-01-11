@@ -17,8 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "olddeploy": "npm run build && gh-pages -d build",
+    "simpledeploy": "npm run olddeploy && ssh root@207.154.253.254 \"cd my-test-site && git pull\"",
+    "deploy": "npm run build && gh-pages -d build && ssh root@207.154.253.254 \"pm2 delete all ; if [ -d \"my-test-site\" ] ; then ( cd my-test-site && git pull && pm2 serve ) ; else ( git clone -b gh-pages git@github.com:Hupra/my-test-site.git ; pm2 serve my-test-site ) ; fi ;\""
   },
   "eslintConfig": {
     "extends": "react-app"
