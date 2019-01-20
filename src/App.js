@@ -6,6 +6,7 @@ import { Grid, Brick } from "./lunchbox/Grid";
 import Setup from "./components/Setup";
 import Repositories from "./components/Repositories";
 import ExamNotes from "./components/ExamNotes";
+import ContextExample from "./components/context_example/ContextExample";
 
 export default () => {
     return (
@@ -16,6 +17,7 @@ export default () => {
                 <Route path="/setup" component={Setup} />
                 <Route path="/repositories" component={Repositories} />
                 <Route path="/exam-notes" component={ExamNotes} />
+                <Route path="/context-example" component={ContextExample} />
 
                 <Route exact path="/about" render={() => <div>This is the about page</div>} />
                 <Route

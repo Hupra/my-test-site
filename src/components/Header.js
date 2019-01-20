@@ -13,6 +13,7 @@ export default () => {
                 <NavLink to="/setup">Setup</NavLink>
                 <NavLink to="/repositories">Repositories</NavLink>
                 <NavLink to="/exam-notes">Exam Notes</NavLink>
+                <NavLink to="/context-example">Context Example</NavLink>
             </nav>
         </header>
     );
