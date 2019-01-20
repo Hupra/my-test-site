@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/register": "^7.0.0",
     "gh-pages": "^2.0.1",
+    "jsdom-quokka-plugin": "^1.0.14",
     "node-sass": "^4.10.0",
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
