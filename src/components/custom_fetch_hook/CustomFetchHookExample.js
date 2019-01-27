@@ -32,7 +32,9 @@ const PrintPerson = ({ person }) => {
             <div>firstname: {person.name.first}</div>
             <div>lastname: {person.name.last}</div>
             <hr />
-            <div>{person.toString()}</div>
+            <pre>
+                <code>{JSON.stringify(person, null, 4)}</code>
+            </pre>
         </div>
     );
 };
