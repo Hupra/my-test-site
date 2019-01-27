@@ -10,7 +10,7 @@ import { HashRouter as Router } from "react-router-dom";
 ReactDOM.render(
     <>
         <Helmet>
-            <title>Daniels Site</title>
+            <title>{React.version}</title>
             <link
                 rel="stylesheet"
                 href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"

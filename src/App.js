@@ -7,6 +7,7 @@ import Setup from "./components/Setup";
 import Repositories from "./components/Repositories";
 import ExamNotes from "./components/ExamNotes";
 import ContextExample from "./components/context_example/ContextExample";
+import CustomFetchHookExample from "./components/custom_fetch_hook/CustomFetchHookExample";
 
 export default () => {
     return (
@@ -18,6 +19,7 @@ export default () => {
                 <Route path="/repositories" component={Repositories} />
                 <Route path="/exam-notes" component={ExamNotes} />
                 <Route path="/context-example" component={ContextExample} />
+                <Route path="/custom-fetch-hook-example" component={CustomFetchHookExample} />
 
                 <Route exact path="/about" render={() => <div>This is the about page</div>} />
                 <Route

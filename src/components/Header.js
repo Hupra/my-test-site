@@ -14,6 +14,7 @@ export default () => {
                 <NavLink to="/repositories">Repositories</NavLink>
                 <NavLink to="/exam-notes">Exam Notes</NavLink>
                 <NavLink to="/context-example">Context Example</NavLink>
+                <NavLink to="/custom-fetch-hook-example">Custom Fetch Hook Example</NavLink>
             </nav>
         </header>
     );
