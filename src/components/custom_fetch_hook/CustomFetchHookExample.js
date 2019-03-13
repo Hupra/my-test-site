@@ -32,8 +32,11 @@ const PrintPerson = ({ person }) => {
             <div>firstname: {person.name.first}</div>
             <div>lastname: {person.name.last}</div>
             <hr />
-            <pre>
+            <pre className="prettyprint lang-json">
                 <code>{JSON.stringify(person, null, 4)}</code>
+            </pre>
+            <pre className="prettyprint">
+                <code className="language-js">console.log(5);</code>
             </pre>
         </div>
     );

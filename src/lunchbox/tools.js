@@ -33,7 +33,9 @@ const cc = () => {
 
         num += countUp ? 1 : -1;
 
-        document.getElementById("header").style.background = `linear-gradient(90deg, rgba(255,25,25,0.${100 -
+        document.getElementById(
+            "header"
+        ).style.background = `linear-gradient(90deg, rgba(255,25,25,0.${100 -
             num}), rgba(255,25,25,0.50), rgba(255,25,25,0.${num})`;
     };
 
